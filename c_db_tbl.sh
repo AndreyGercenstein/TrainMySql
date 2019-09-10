@@ -1,7 +1,7 @@
 #!/bin/bash
 cnt=1
 if [ "$#" != "6" ]; then
-echo -e "You should set 6 parametres: \n\$1 = Mysql Username , \n\$2 = database name, \n\$3 = password for mysql user.\n\$4 = Mysql Usernamedump , \n\$5 = database namedump, \n\$6 = password for mysql userdump.\nFor example, you can run this:\ncreatedatabase.sh user database password userdump databasedump passworddump " 1>&2
+echo -e "You should set 6 parametres: \n\$1 = Mysql Username , \n\$2 = database name, \n\$3 = password for mysql user.\n\$4 = Mysql Usernamedump , \n\$5 = database namedump, \n\$6 = password for mysql userdump.\nFor example, you can run this:\nc_db_tbl.sh user database password userdump databasedump passworddump " 1>&2
 exit 1
 fi
 dbuser=$1
