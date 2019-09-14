@@ -29,7 +29,8 @@ CREATE TABLE likes (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   like_type_id INT UNSIGNED NOT NULL,
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP)
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
 
 --Таблица типов лайков медиафайлов, постов и пользователей.
 CREATE TABLE like_types (
@@ -44,7 +45,7 @@ CREATE TABLE user_action (
   action_type_id INT UNSIGNED NOT NULL,
   entity_id INT UNSIGNED NOT NULL, -- ссылка на id медиафайлов, постов, лайков
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP)
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
 -- Таблица типов действий пользователя
